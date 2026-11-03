@@ -8,7 +8,7 @@
 | Equipo externo | Grupo 1 · Gestión de clientes |
 | Repositorio externo | https://github.com/A0Nicolas/APP-LIT-1 (rama `dev`) |
 | Archivo externo | `src/components/clientes/cliente-form.js` → copiado en `src/externos/equipo-1/register.js` |
-| Commit usado | `a81f226` (último commit de la rama `dev` al momento de copiar; verificado: la copia es idéntica) |
+| Commit usado | `a81f226` (último commit de la rama `dev` al momento de copiar; verificar con `git log -1`) |
 
 ## 2. Componentes y roles
 
@@ -60,8 +60,7 @@ Los productos siguen el mismo patrón con el formulario propio (`producto-regist
 | # | Integrante | Síntoma | Causa | Solución |
 |---|---|---|---|---|
 | 1 | Por confirmar | No se podía pasar el cliente a la tabla de productos: habría que poner la edad como precio, o nombre y apellido en la columna de producto. | El formulario del Grupo 1 entrega datos de clientes y nuestra tabla muestra productos (`nombre`, `categoria`, `precio`). Son dominios distintos. | Se añadió una tabla propia de clientes (`wc-table-clientes`) en el padre. Así ningún dato cambia de significado y ambas tablas reciben su propia lista por propiedad. |
-| 2 | De la Cruz Alejandro | El padre no tenía el componente: `src/externos/equipo-1/register.js` solo tenía un comentario "pendiente de recibir". | El repositorio tenía un marcador en lugar del archivo del Grupo 1. | Se reemplazó el marcador por una copia byte a byte del archivo del commit `a81f226`, verificada con `cmp`. |
-| 3 | Sangoquiza David | Al probar `integracion.html`, la consola mostraba el error `Failed to load resource: favicon.ico 404 (Not Found)`. | La página no declaraba un ícono, así que el navegador pedía `/favicon.ico` por defecto y el servidor de Vite no lo encontraba. | Se agregó `<link rel="icon" href="data:," />` en el `<head>` de `integracion.html`. La consola quedó sin errores. |
+| 2 | Por confirmar | El padre no tenía el componente: `src/externos/equipo-1/register.js` solo tenía un comentario "pendiente de recibir". | El repositorio tenía un marcador en lugar del archivo del Grupo 1. | Se reemplazó el marcador por una copia byte a byte del archivo del commit `a81f226`, verificada con `cmp`. |
 
 ## 5. Evaluación del componente externo
 
@@ -69,11 +68,11 @@ Los productos siguen el mismo patrón con el formulario propio (`producto-regist
 |---|---|---|
 | API clara | 3 | No recibe propiedades: solo emite `cliente-registrado` con `detail` de cuatro campos. Los nombres de los campos son claros, pero el evento y su `detail` no están documentados en el archivo (líneas 43–46). |
 | Evento bien construido | 4 | Usa `bubbles: true` y `composed: true` (líneas 43–46), así que el padre lo escucha sin acceder al interior del componente. Envía un objeto en `detail` y `age` ya llega como número. |
-| Robustez | 3 | Valida nombre, apellido, correo y edad (líneas 34–40) y no emite datos inválidos. Pero si la validación falla, hace `return;` (línea 40) sin ningún aviso al usuario, así que la edad `30.5` o un campo vacío no muestran error. |
+| Robustez | 3 | Valida nombre, apellido, correo y edad (líneas 34–40) y no emite datos inválidos. Probado: la edad `30.5` muestra un mensaje del navegador, pero un nombre con solo espacios pasa el atributo `required`, la validación de JavaScript lo rechaza en la línea 40 sin ningún aviso y no se emite el evento. Ver issue #6. |
 | Encapsulamiento | 5 | Sus estilos van en `static styles` (línea 11, dentro del shadow DOM). Probado en el navegador: el formulario se ve bien dentro de nuestra página y nuestros estilos no lo afectan. Consola sin errores (solo el aviso normal de modo desarrollo de Lit). |
 | Reutilización | 5 | Solo importa `lit`, que ya es dependencia del proyecto. Se copió sin cambios y funciona sin archivos adicionales. |
 
-Issue abierto: https://github.com/A0Nicolas/APP-LIT-1/issues (pendiente de publicar; texto preparado en el informe del equipo).
+Issue abierto: https://github.com/A0Nicolas/APP-LIT-1/issues/6
 
 ## 6. Uso de IA
 
@@ -86,7 +85,7 @@ Issue abierto: https://github.com/A0Nicolas/APP-LIT-1/issues (pendiente de publi
 | Integrante | Usuario de GitHub | Rol | Qué hizo | Enlace a sus commits |
 |---|---|---|---|---|
 | Cajas Dylan | Por confirmar | Por confirmar | Por confirmar | Pendiente |
-| De la Cruz Alejandro | Aleshuga1020 | Por confirmar | Integración del padre, adaptador, tabla de clientes, prueba en navegador y documentación | [Sus commits](https://github.com/byDayLand14/app-lit-grupo5/pull/2/commits) |
-| Sangoquiza David | DavidSangoquiza | Rol 1 · Integración | Verificó que la copia del componente del Grupo 1 es idéntica al commit `a81f226`, probó la integración en el navegador, corrigió el error 404 del favicon en `integracion.html`, tomó la captura y abrió el pull request. | [a7900d9](https://github.com/byDayLand14/app-lit-grupo5/commit/a7900d9) · [1a75a08](https://github.com/byDayLand14/app-lit-grupo5/commit/1a75a08) |
+| De la Cruz Alejandro | Aleshuga1020 | 3 · Revisión externa y 4 · Documentación | Integración del padre, adaptador, tabla de clientes, prueba en navegador, issue #6, documentación y revisión del pull request | https://github.com/byDayLand14/app-lit-grupo5/commits?author=Aleshuga1020 |
+| Sangoquiza David | DavidSangoquiza | 1 · Integración | Apertura del pull request #2 | https://github.com/byDayLand14/app-lit-grupo5/commits?author=DavidSangoquiza |
 
-Pull request: [#2](https://github.com/byDayLand14/app-lit-grupo5/pull/2) · Revisado por: pendiente.
+Pull request: https://github.com/byDayLand14/app-lit-grupo5/pull/2 · Revisado por: Aleshuga1020 (aprobación y fusión pendientes).
