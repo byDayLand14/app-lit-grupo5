@@ -86,7 +86,7 @@ Issue abierto: https://github.com/A0Nicolas/APP-LIT-1/issues (pendiente de publi
 | Integrante | Usuario de GitHub | Rol | Qué hizo | Enlace a sus commits |
 |---|---|---|---|---|
 | Cajas Dylan | Por confirmar | Por confirmar | Por confirmar | Pendiente |
-| De la Cruz Alejandro | Por confirmar | Por confirmar | Integración del padre, adaptador, tabla de clientes, prueba en navegador y documentación | Pendiente |
-| Sangoquiza David | DavidSangoquiza | Rol 1 · Integración | Verificó que la copia del componente del Grupo 1 es idéntica al commit `a81f226`, probó la integración en el navegador, corrigió el error 404 del favicon en `integracion.html`, tomó la captura y abrió el pull request. | Pendiente |
+| De la Cruz Alejandro | Aleshuga1020 | Por confirmar | Integración del padre, adaptador, tabla de clientes, prueba en navegador y documentación | [Sus commits](https://github.com/byDayLand14/app-lit-grupo5/pull/2/commits) |
+| Sangoquiza David | DavidSangoquiza | Rol 1 · Integración | Verificó que la copia del componente del Grupo 1 es idéntica al commit `a81f226`, probó la integración en el navegador, corrigió el error 404 del favicon en `integracion.html`, tomó la captura y abrió el pull request. | [a7900d9](https://github.com/byDayLand14/app-lit-grupo5/commit/a7900d9) · [1a75a08](https://github.com/byDayLand14/app-lit-grupo5/commit/1a75a08) |
 
-Pull request: pendiente · Revisado por: pendiente.
+Pull request: [#2](https://github.com/byDayLand14/app-lit-grupo5/pull/2) · Revisado por: pendiente.
