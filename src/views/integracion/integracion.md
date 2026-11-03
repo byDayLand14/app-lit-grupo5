@@ -84,7 +84,7 @@ Issue abierto: https://github.com/A0Nicolas/APP-LIT-1/issues/6
 
 | Integrante | Usuario de GitHub | Rol | Qué hizo | Enlace a sus commits |
 |---|---|---|---|---|
-| Cajas Dylan | Por confirmar | Por confirmar | Por confirmar | Pendiente |
+| Cajas Dylan | byDayLand14 | Rol 2 · Adaptador y pruebas | Creó el formulario y la tabla de productos del equipo y revisó la integración | https://github.com/byDayLand14/app-it-grupo5/commits?author=byDayLand14⁠ |
 | De la Cruz Alejandro | Aleshuga1020 | 3 · Revisión externa y 4 · Documentación | Integración del padre, adaptador, tabla de clientes, prueba en navegador, issue #6, documentación y revisión del pull request | https://github.com/byDayLand14/app-lit-grupo5/commits?author=Aleshuga1020 |
 | Sangoquiza David | DavidSangoquiza | 1 · Integración | Apertura del pull request #2 | https://github.com/byDayLand14/app-lit-grupo5/commits?author=DavidSangoquiza |
 
