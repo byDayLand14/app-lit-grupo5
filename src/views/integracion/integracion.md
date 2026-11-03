@@ -8,7 +8,7 @@
 | Equipo externo | Grupo 1 · Gestión de clientes |
 | Repositorio externo | https://github.com/A0Nicolas/APP-LIT-1 (rama `dev`) |
 | Archivo externo | `src/components/clientes/cliente-form.js` → copiado en `src/externos/equipo-1/register.js` |
-| Commit usado | `a81f226` (último commit de la rama `dev` al momento de copiar; verificar con `git log -1`) |
+| Commit usado | `a81f226` (último commit de la rama `dev` al momento de copiar; verificado: la copia es idéntica) |
 
 ## 2. Componentes y roles
 
@@ -60,7 +60,8 @@ Los productos siguen el mismo patrón con el formulario propio (`producto-regist
 | # | Integrante | Síntoma | Causa | Solución |
 |---|---|---|---|---|
 | 1 | Por confirmar | No se podía pasar el cliente a la tabla de productos: habría que poner la edad como precio, o nombre y apellido en la columna de producto. | El formulario del Grupo 1 entrega datos de clientes y nuestra tabla muestra productos (`nombre`, `categoria`, `precio`). Son dominios distintos. | Se añadió una tabla propia de clientes (`wc-table-clientes`) en el padre. Así ningún dato cambia de significado y ambas tablas reciben su propia lista por propiedad. |
-| 2 | Por confirmar | El padre no tenía el componente: `src/externos/equipo-1/register.js` solo tenía un comentario "pendiente de recibir". | El repositorio tenía un marcador en lugar del archivo del Grupo 1. | Se reemplazó el marcador por una copia byte a byte del archivo del commit `a81f226`, verificada con `cmp`. |
+| 2 | De la Cruz Alejandro | El padre no tenía el componente: `src/externos/equipo-1/register.js` solo tenía un comentario "pendiente de recibir". | El repositorio tenía un marcador en lugar del archivo del Grupo 1. | Se reemplazó el marcador por una copia byte a byte del archivo del commit `a81f226`, verificada con `cmp`. |
+| 3 | Sangoquiza David | Al probar `integracion.html`, la consola mostraba el error `Failed to load resource: favicon.ico 404 (Not Found)`. | La página no declaraba un ícono, así que el navegador pedía `/favicon.ico` por defecto y el servidor de Vite no lo encontraba. | Se agregó `<link rel="icon" href="data:," />` en el `<head>` de `integracion.html`. La consola quedó sin errores. |
 
 ## 5. Evaluación del componente externo
 
@@ -86,6 +87,6 @@ Issue abierto: https://github.com/A0Nicolas/APP-LIT-1/issues (pendiente de publi
 |---|---|---|---|---|
 | Cajas Dylan | Por confirmar | Por confirmar | Por confirmar | Pendiente |
 | De la Cruz Alejandro | Por confirmar | Por confirmar | Integración del padre, adaptador, tabla de clientes, prueba en navegador y documentación | Pendiente |
-| Sangoquiza David | Por confirmar | Por confirmar | Por confirmar | Pendiente |
+| Sangoquiza David | DavidSangoquiza | Rol 1 · Integración | Verificó que la copia del componente del Grupo 1 es idéntica al commit `a81f226`, probó la integración en el navegador, corrigió el error 404 del favicon en `integracion.html`, tomó la captura y abrió el pull request. | Pendiente |
 
 Pull request: pendiente · Revisado por: pendiente.
