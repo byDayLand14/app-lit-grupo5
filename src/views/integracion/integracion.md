@@ -58,7 +58,7 @@ Issue abierto: pendiente.
 
 | Integrante | Usuario de GitHub | Rol | Qué hizo | Enlace a sus commits |
 |---|---|---|---|---|
-| Cajas Dylan | Por confirmar | Pendiente | Pendiente | Pendiente |
+| Cajas Dylan | byDayLand14 | Rol 2 · Adaptador y pruebas | Creó el formulario y la tabla de productos del equipo y revisó la integración | Ver PR #2 |
 | De la Cruz Alejandro | Por confirmar | Pendiente | Pendiente | Pendiente |
 | Sangoquiza David | Por confirmar | Pendiente | Pendiente | Pendiente |
 
