@@ -3,10 +3,31 @@ import { LitElement, html, css } from 'lit';
 export class FormProducto extends LitElement {
   static styles = css`
     :host { display:block; }
-    form { display:grid; gap:16px; }
-    label { display:grid; gap:7px; font-weight:600; }
-    input { padding:11px; border:1px solid #cbd5e1; border-radius:6px; font:inherit; min-width:0; }
-    button { background:#225c47; color:white; border:0; padding:12px; border-radius:6px; font:inherit; cursor:pointer; }
+    form { display:grid; gap:14px; }
+    label { display:grid; gap:6px; font-weight:600; font-size:14px; color:#312e81; }
+    input {
+      padding:12px 14px;
+      border:1.5px solid #c7d2fe;
+      border-radius:12px;
+      font:inherit;
+      background:#fff;
+      min-width:0;
+      transition:border-color .2s, box-shadow .2s;
+    }
+    input:focus { outline:none; border-color:#6366f1; box-shadow:0 0 0 4px #e0e7ff; }
+    button {
+      margin-top:6px;
+      background:linear-gradient(135deg, #6366f1, #0891b2);
+      color:white;
+      border:0;
+      padding:13px;
+      border-radius:999px;
+      font:inherit;
+      font-weight:700;
+      cursor:pointer;
+      box-shadow:0 10px 20px -10px rgba(79,70,229,.7);
+    }
+    button:hover { filter:brightness(1.06); }
   `;
 
   registrar(event) {
