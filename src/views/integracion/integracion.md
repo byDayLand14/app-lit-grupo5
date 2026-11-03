@@ -88,4 +88,5 @@ Issue abierto: https://github.com/A0Nicolas/APP-LIT-1/issues/6
 | De la Cruz Alejandro | Aleshuga1020 | 3 · Revisión externa y 4 · Documentación | Integración del padre, adaptador, tabla de clientes, prueba en navegador, issue #6, documentación y revisión del pull request | https://github.com/byDayLand14/app-lit-grupo5/commits?author=Aleshuga1020 |
 | Sangoquiza David | DavidSangoquiza | 1 · Integración | Apertura del pull request #2 | https://github.com/byDayLand14/app-lit-grupo5/commits?author=DavidSangoquiza |
 
+
 Pull request: https://github.com/byDayLand14/app-lit-grupo5/pull/2 · Revisado por: Aleshuga1020 (aprobación y fusión pendientes).
