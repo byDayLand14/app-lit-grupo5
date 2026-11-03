@@ -15,8 +15,8 @@ export class Integracion extends LitElement {
       min-height:100vh;
       box-sizing:border-box;
       padding:40px 24px 64px;
-      background:linear-gradient(160deg, #eef2ff 0%, #f8fafc 45%, #ecfeff 100%);
-      color:#1e1b4b;
+      background:linear-gradient(160deg, #f5f3ff 0%, #faf9fe 50%, #ede9fe 100%);
+      color:#2e1065;
       font-family:'Segoe UI', system-ui, sans-serif;
     }
     header {
@@ -24,9 +24,9 @@ export class Integracion extends LitElement {
       margin:0 auto 32px;
       padding:28px 32px;
       border-radius:20px;
-      background:linear-gradient(135deg, #4338ca, #0e7490);
+      background:linear-gradient(135deg, #3b0764, #6d28d9);
       color:white;
-      box-shadow:0 18px 40px -18px rgba(67,56,202,.55);
+      box-shadow:0 18px 40px -18px rgba(76,29,149,.45);
     }
     header .etiqueta { font-size:12px; letter-spacing:.18em; text-transform:uppercase; opacity:.8; margin:0; }
     h1 { margin:6px 0 4px; font-size:30px; font-weight:800; }
@@ -42,11 +42,11 @@ export class Integracion extends LitElement {
     .bloque { margin-top:24px; }
     section {
       background:rgba(255,255,255,.92);
-      border:1px solid #e0e7ff;
+      border:1px solid #ddd6fe;
       border-radius:18px;
       padding:26px;
       min-width:0;
-      box-shadow:0 10px 30px -18px rgba(30,27,75,.35);
+      box-shadow:0 10px 30px -18px rgba(46,16,101,.3);
     }
     h2 {
       margin:0 0 18px;
@@ -61,8 +61,8 @@ export class Integracion extends LitElement {
       width:10px;
       height:10px;
       border-radius:50%;
-      background:#06b6d4;
-      box-shadow:0 0 0 4px #cffafe;
+      background:#7c3aed;
+      box-shadow:0 0 0 4px #ede9fe;
     }
     @media(max-width:820px) {
       .contenido { grid-template-columns:1fr; }

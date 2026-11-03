@@ -8,21 +8,21 @@ export class TablaClientes extends LitElement {
     table { border-collapse:separate; border-spacing:0; width:100%; text-align:left; font-size:15px; }
     th, td { padding:14px 12px; overflow-wrap:anywhere; }
     th {
-      background:#ecfeff;
-      color:#155e75;
+      background:#f5f3ff;
+      color:#4c1d95;
       font-size:13px;
       text-transform:uppercase;
       letter-spacing:.06em;
     }
     th:first-child, td:first-child { border-radius:12px 0 0 12px; }
     th:last-child, td:last-child { border-radius:0 12px 12px 0; }
-    tbody tr:nth-child(even) { background:#f7fdff; }
-    tbody tr:hover { background:#ecfeff; }
-    td:nth-child(3) { color:#4338ca; }
+    tbody tr:nth-child(even) { background:#faf8ff; }
+    tbody tr:hover { background:#f5f3ff; }
+    td:nth-child(3) { color:#6d28d9; }
     p {
       color:#64748b;
       padding:18px;
-      border:1.5px dashed #a5f3fc;
+      border:1.5px dashed #ddd6fe;
       border-radius:14px;
       text-align:center;
     }
